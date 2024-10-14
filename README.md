@@ -7,6 +7,7 @@ To predict the readmission of hospital patients in 30 days. Readmission of patie
 
 
 ## Data
+![DataImage](https://github.com/user-attachments/assets/b363840e-f782-4ca2-b47e-d9fe3b187f71)
 ## Imports
 
 ```
