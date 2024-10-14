@@ -9,7 +9,7 @@ To predict the readmission of hospital patients in 30 days. Readmission of patie
 ## Data
 ## Imports
 
-```http
+```
 import pandas
 import matplotlib.pyplot
 import numpy
