@@ -42,7 +42,7 @@ from sklearn.ensemble import RandomForestClassifier
 
 Our data consisted majority of data points wherein patients did not readmit in 30 days. There is a problem of class imbalance in the test and train dataset. We used SMOTE(Synthetic Minority Oversampling Technique) to counter this which is an effective way of synthesizing new samples from existing ones. 
 
-```http
+```
 Original dataset shape: ({0: 86986, 1: 11066})
 New dataset shape: ({0: 86986, 1: 86986})
 ```
@@ -58,7 +58,7 @@ New dataset shape: ({0: 86986, 1: 86986})
 Refinement Over Random Forest
 - Cross Validation: number of splits =5
 - Hyperparameter Tuning using RandomizedCV: 
-```http
+```
 Optimize these 3 parameters and find best value from the list.
     space['n_estimators'] = [10, 100, 500]
     space['max_depth'] = [20, 25, 30]
@@ -73,7 +73,7 @@ Random search across 25 candidates, using 5-fold cross validation.
 
 
 ## Results
-
+![resultsDS](https://github.com/user-attachments/assets/6a605022-4992-4b25-879e-b5fa6345f548)
 - Logistic Regression has best TPR value, but there is a tradeoff between model complexity and accuracy. If we can compromise on FPR and TNR then Logistic Regression is good but if we choose Random Forest, we get better performance, Accuracy, although it is computationally costly.
 
 - For our problem statement, Recall score is an effective measure. It is more preferable to not miss any patient who will be readmitted in 30 days even if that means predicting some patients as readmitted within 30days but actually they will not be readmit in 30 days.
